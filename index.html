@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    
+    <!-- Google Font -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input style="float:right;padding: 1em 2em;
+            margin-left: 1em;
+            background-color: #ffc525;
+            color: #ffffff;
+            border-radius: 5px;
+            margin-top: 0.5em;" 
+            type="button" value="Back to Books" 
+            onclick="window.location.href = '///C:/Users/yeshn/OneDrive/Desktop/Library%20MS/books.html'" />
+    <br>
+    <h3>SEARCH FOR TITLE HERE</h3>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <h3>FILTER BY SUBJECT</h3>
+      <br>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('novel')">
+          NOVEL
+        </button>
+        <button class="button-value" onclick="filterProduct('adventure')">
+          ADVENTURE
+        </button>
+        <button class="button-value" onclick="filterProduct('science')">
+          SCIENCE
+        </button>
+      </div>
+      <br>
+      <h3>FILTER BY YEAR OF PUBLISH</h3>
+      <br>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('2022')">
+          2022
+        </button>
+        <button class="button-value" onclick="filterProduct('2021')">
+          2021
+        </button>
+        <button class="button-value" onclick="filterProduct('2020')">
+          2020
+        </button>
+      </div>
+      <br>
+      <h3>FILTER BY AUTHOR</h3>
+      <br>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('james')">
+          JAMES
+        </button>
+        <button class="button-value" onclick="filterProduct('mary')">
+          MARY
+        </button>
+        <button class="button-value" onclick="filterProduct('carl')">
+          CARL
+        </button>
+      </div>
+      <br>
+      <div id="products"></div>
+    </div>
+    <p id="count"></p>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
